@@ -633,8 +633,6 @@ attributes:
   regularExpression: true
 - beginString: \|\s*trans\b
   regularExpression: true
-- beginString: \|\s*format_date\b
-  regularExpression: true
 - beginString: \|\s*token_replace\b
   regularExpression: true
 - beginString: \|\s*preg_replace\b
@@ -650,6 +648,8 @@ attributes:
 - beginString: \|\s*file_url\b
   regularExpression: true
 - beginString: \|\s*file_uri\b
+  regularExpression: true
+- beginString: \|\s*view\b
   regularExpression: true
 characters:
 - beginString: '&#[0-9]{1,10};'
@@ -908,6 +908,12 @@ commands:
 - beginString: \bpath\b
   regularExpression: true
 - beginString: \burl\b
+  regularExpression: true
+- beginString: \bdrupal_csrf_token\b
+  regularExpression: true
+- beginString: \bdrupal_placeholder\b
+  regularExpression: true
+- beginString: \bwithout\b
   regularExpression: true
 - beginString: \bdrupal_view\b
   regularExpression: true
@@ -1775,6 +1781,10 @@ keywords:
   regularExpression: true
 - beginString: \bdeprecated\b
   regularExpression: true
+- beginString: \bdo\b
+  regularExpression: true
+- beginString: \buse\b
+  regularExpression: true
 - beginString: \band\b
   regularExpression: true
 - beginString: \bor\b
@@ -1791,7 +1801,7 @@ metadata:
   distributionURL: https://github.com/betarobot/coteditor-twig-syntax
   lastModified: '2026-03-10'
   license: MIT
-  version: 2.1.0
+  version: 2.2.0
 numbers:
 - beginString: <?php
   endString: ?>
@@ -1873,21 +1883,69 @@ variables:
   regularExpression: true
 - beginString: \bcontent\b
   regularExpression: true
+- beginString: \belements\b
+  regularExpression: true
+- beginString: \bentity\b
+  regularExpression: true
+- beginString: \blabel\b
+  regularExpression: true
+- beginString: \btitle\b
+  regularExpression: true
+- beginString: \bdescription\b
+  regularExpression: true
 - beginString: \bnode\b
   regularExpression: true
 - beginString: \buser\b
   regularExpression: true
+- beginString: \bterm\b
+  regularExpression: true
+- beginString: \bparagraph\b
+  regularExpression: true
+- beginString: \bmedia\b
+  regularExpression: true
+- beginString: \bitems\b
+  regularExpression: true
+- beginString: \bitem\b
+  regularExpression: true
+- beginString: \bfield_label\b
+  regularExpression: true
+- beginString: \bfield_name\b
+  regularExpression: true
+- beginString: \bfield_type\b
+  regularExpression: true
 - beginString: \bpage\b
+  regularExpression: true
+- beginString: \bregion\b
   regularExpression: true
 - beginString: \bview\b
   regularExpression: true
 - beginString: \bblock\b
+  regularExpression: true
+- beginString: \btabs\b
+  regularExpression: true
+- beginString: \bmessages\b
+  regularExpression: true
+- beginString: \bbreadcrumb\b
+  regularExpression: true
+- beginString: \bheader\b
+  regularExpression: true
+- beginString: \bfooter\b
+  regularExpression: true
+- beginString: \brows\b
+  regularExpression: true
+- beginString: \bexposed\b
+  regularExpression: true
+- beginString: \bempty\b
+  regularExpression: true
+- beginString: \bmenu_name\b
   regularExpression: true
 - beginString: \bis_front\b
   regularExpression: true
 - beginString: \blogged_in\b
   regularExpression: true
 - beginString: \bsite_name\b
+  regularExpression: true
+- beginString: \bsite_slogan\b
   regularExpression: true
 - beginString: \btitle_prefix\b
   regularExpression: true
@@ -1896,4 +1954,6 @@ variables:
 - beginString: \b_context\b
   regularExpression: true
 - beginString: \bloop\b
+  regularExpression: true
+- beginString: \burl\b
   regularExpression: true
