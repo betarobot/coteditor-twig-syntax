@@ -609,6 +609,48 @@ attributes:
   regularExpression: true
 - beginString: \|\s*url_encode\b
   regularExpression: true
+- beginString: \|\s*clean_class\b
+  regularExpression: true
+- beginString: \|\s*clean_id\b
+  regularExpression: true
+- beginString: \|\s*clean_unique_id\b
+  regularExpression: true
+- beginString: \|\s*render\b
+  regularExpression: true
+- beginString: \|\s*safe_join\b
+  regularExpression: true
+- beginString: \|\s*without\b
+  regularExpression: true
+- beginString: \|\s*add_suggestion\b
+  regularExpression: true
+- beginString: \|\s*add_class\b
+  regularExpression: true
+- beginString: \|\s*set_attribute\b
+  regularExpression: true
+- beginString: \|\s*placeholder\b
+  regularExpression: true
+- beginString: \|\s*t\b
+  regularExpression: true
+- beginString: \|\s*trans\b
+  regularExpression: true
+- beginString: \|\s*format_date\b
+  regularExpression: true
+- beginString: \|\s*token_replace\b
+  regularExpression: true
+- beginString: \|\s*preg_replace\b
+  regularExpression: true
+- beginString: \|\s*image_style\b
+  regularExpression: true
+- beginString: \|\s*transliterate\b
+  regularExpression: true
+- beginString: \|\s*check_markup\b
+  regularExpression: true
+- beginString: \|\s*truncate\b
+  regularExpression: true
+- beginString: \|\s*file_url\b
+  regularExpression: true
+- beginString: \|\s*file_uri\b
+  regularExpression: true
 characters:
 - beginString: '&#[0-9]{1,10};'
   regularExpression: true
@@ -848,6 +890,68 @@ commands:
 - beginString: \btemplate_from_string\b
   regularExpression: true
 - beginString: \bhtml_classes\b
+  regularExpression: true
+- beginString: \battach_library\b
+  regularExpression: true
+- beginString: \bactive_theme\b
+  regularExpression: true
+- beginString: \bactive_theme_path\b
+  regularExpression: true
+- beginString: \bcreate_attribute\b
+  regularExpression: true
+- beginString: \brender_var\b
+  regularExpression: true
+- beginString: \bfile_url\b
+  regularExpression: true
+- beginString: \blink\b
+  regularExpression: true
+- beginString: \bpath\b
+  regularExpression: true
+- beginString: \burl\b
+  regularExpression: true
+- beginString: \bdrupal_view\b
+  regularExpression: true
+- beginString: \bdrupal_view_result\b
+  regularExpression: true
+- beginString: \bdrupal_block\b
+  regularExpression: true
+- beginString: \bdrupal_region\b
+  regularExpression: true
+- beginString: \bdrupal_entity\b
+  regularExpression: true
+- beginString: \bdrupal_entity_form\b
+  regularExpression: true
+- beginString: \bdrupal_field\b
+  regularExpression: true
+- beginString: \bdrupal_menu\b
+  regularExpression: true
+- beginString: \bdrupal_form\b
+  regularExpression: true
+- beginString: \bdrupal_image\b
+  regularExpression: true
+- beginString: \bdrupal_token\b
+  regularExpression: true
+- beginString: \bdrupal_config\b
+  regularExpression: true
+- beginString: \bdrupal_dump\b
+  regularExpression: true
+- beginString: \bdrupal_title\b
+  regularExpression: true
+- beginString: \bdrupal_url\b
+  regularExpression: true
+- beginString: \bdrupal_link\b
+  regularExpression: true
+- beginString: \bdrupal_messages\b
+  regularExpression: true
+- beginString: \bdrupal_breadcrumb\b
+  regularExpression: true
+- beginString: \bdrupal_breakpoint\b
+  regularExpression: true
+- beginString: \bcontextual_links\b
+  regularExpression: true
+- beginString: \bdd\b
+  regularExpression: true
+- beginString: \bkint\b
   regularExpression: true
 commentDelimiters:
   beginDelimiter: '{#'
@@ -1221,7 +1325,6 @@ completions:
 - keyString: wrap
 extensions:
 - keyString: twig
-- keyString: html.twig
 filenames: []
 interpreters: []
 keywords:
@@ -1688,7 +1791,7 @@ metadata:
   distributionURL: https://github.com/betarobot/coteditor-twig-syntax
   lastModified: '2026-03-10'
   license: MIT
-  version: 2.0.0
+  version: 2.1.0
 numbers:
 - beginString: <?php
   endString: ?>
@@ -1765,4 +1868,32 @@ values:
 - beginString: \bnone\b
   ignoreCase: true
   regularExpression: true
-variables: []
+variables:
+- beginString: \battributes\b
+  regularExpression: true
+- beginString: \bcontent\b
+  regularExpression: true
+- beginString: \bnode\b
+  regularExpression: true
+- beginString: \buser\b
+  regularExpression: true
+- beginString: \bpage\b
+  regularExpression: true
+- beginString: \bview\b
+  regularExpression: true
+- beginString: \bblock\b
+  regularExpression: true
+- beginString: \bis_front\b
+  regularExpression: true
+- beginString: \blogged_in\b
+  regularExpression: true
+- beginString: \bsite_name\b
+  regularExpression: true
+- beginString: \btitle_prefix\b
+  regularExpression: true
+- beginString: \btitle_suffix\b
+  regularExpression: true
+- beginString: \b_context\b
+  regularExpression: true
+- beginString: \bloop\b
+  regularExpression: true
