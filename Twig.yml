@@ -52,8 +52,6 @@ completions:
 - keyString: endautoescape
 - keyString: verbatim
 - keyString: endverbatim
-- keyString: spaceless
-- keyString: endspaceless
 - keyString: flush
 - keyString: do
 - keyString: use
@@ -68,7 +66,7 @@ completions:
 - keyString: matches
 - keyString: true
 - keyString: false
-- keyString: null
+- keyString: 'null'
 - keyString: none
 - keyString: defined
 - keyString: empty
@@ -126,7 +124,6 @@ completions:
 - keyString: loop.parent
 extensions:
 - keyString: twig
-- keyString: html.twig
 filenames: []
 interpreters: []
 keywords:
@@ -144,7 +141,7 @@ metadata:
   distributionURL: https://github.com/betarobot/coteditor-twig-syntax
   lastModified: '2026-03-10'
   license: MIT
-  version: 1.1.0
+  version: 1.2.0
 numbers:
 - beginString: '\b\d+(?:\.\d+)?\b'
   regularExpression: true
@@ -160,8 +157,8 @@ outlineMenu:
 strings:
 - beginString: '"'
   endString: '"'
-- beginString: "'"
-  endString: "'"
+- beginString: ''''
+  endString: ''''
 types:
 - beginString: \btrue\b
   ignoreCase: true
