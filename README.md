@@ -43,7 +43,7 @@ The syntax includes completions for all built-in tags, filters, functions, opera
 
 ## Contributing
 
-Pull requests welcome — especially for platform-specific extras (Craft CMS fields, Drupal functions, etc.).
+Pull requests welcome — especially for platform-specific extras (Drupal functions, etc.).
 
 ## License
 
