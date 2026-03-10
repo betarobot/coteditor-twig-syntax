@@ -1,6 +1,103 @@
-attributes: []
-characters: []
+attributes:
+# Filter names — mirrors HTML attribute names colour
+# Matched after a pipe so common English words don't get false-positives
+- beginString: \|\s*abs\b
+  regularExpression: true
+- beginString: \|\s*batch\b
+  regularExpression: true
+- beginString: \|\s*capitalize\b
+  regularExpression: true
+- beginString: \|\s*column\b
+  regularExpression: true
+- beginString: \|\s*convert_encoding\b
+  regularExpression: true
+- beginString: \|\s*date_modify\b
+  regularExpression: true
+- beginString: \|\s*date\b
+  regularExpression: true
+- beginString: \|\s*default\b
+  regularExpression: true
+- beginString: \|\s*e\b
+  regularExpression: true
+- beginString: \|\s*escape\b
+  regularExpression: true
+- beginString: \|\s*filter\b
+  regularExpression: true
+- beginString: \|\s*first\b
+  regularExpression: true
+- beginString: \|\s*format_currency\b
+  regularExpression: true
+- beginString: \|\s*format_date\b
+  regularExpression: true
+- beginString: \|\s*format_datetime\b
+  regularExpression: true
+- beginString: \|\s*format_number\b
+  regularExpression: true
+- beginString: \|\s*format_time\b
+  regularExpression: true
+- beginString: \|\s*format\b
+  regularExpression: true
+- beginString: \|\s*join\b
+  regularExpression: true
+- beginString: \|\s*json_encode\b
+  regularExpression: true
+- beginString: \|\s*keys\b
+  regularExpression: true
+- beginString: \|\s*last\b
+  regularExpression: true
+- beginString: \|\s*length\b
+  regularExpression: true
+- beginString: \|\s*lower\b
+  regularExpression: true
+- beginString: \|\s*map\b
+  regularExpression: true
+- beginString: \|\s*markdown\b
+  regularExpression: true
+- beginString: \|\s*merge\b
+  regularExpression: true
+- beginString: \|\s*nl2br\b
+  regularExpression: true
+- beginString: \|\s*number_format\b
+  regularExpression: true
+- beginString: \|\s*raw\b
+  regularExpression: true
+- beginString: \|\s*reduce\b
+  regularExpression: true
+- beginString: \|\s*replace\b
+  regularExpression: true
+- beginString: \|\s*reverse\b
+  regularExpression: true
+- beginString: \|\s*round\b
+  regularExpression: true
+- beginString: \|\s*slice\b
+  regularExpression: true
+- beginString: \|\s*sort\b
+  regularExpression: true
+- beginString: \|\s*split\b
+  regularExpression: true
+- beginString: \|\s*striptags\b
+  regularExpression: true
+- beginString: \|\s*title\b
+  regularExpression: true
+- beginString: \|\s*trim\b
+  regularExpression: true
+- beginString: \|\s*upper\b
+  regularExpression: true
+- beginString: \|\s*url_encode\b
+  regularExpression: true
+characters:
+# Twig operators — mirrors HTML entity colour
+- beginString: '~'
+- beginString: \.\.
+  regularExpression: true
+commentDelimiters:
+  beginDelimiter: '{#'
+  endDelimiter: '#}'
+comments:
+- beginString: '{#'
+  endString: '#}'
 commands:
+# Built-in functions — mirrors HTML event-handler colour
 - beginString: \bdump\b
   regularExpression: true
 - beginString: \bcycle\b
@@ -11,20 +108,12 @@ commands:
   regularExpression: true
 - beginString: \bparent\b
   regularExpression: true
-- beginString: \bstriptags\b
+- beginString: \bsource\b
   regularExpression: true
-- beginString: \bjson_encode\b
+- beginString: \btemplate_from_string\b
   regularExpression: true
-- beginString: \burl_encode\b
+- beginString: \bhtml_classes\b
   regularExpression: true
-- beginString: \bnl2br\b
-  regularExpression: true
-commentDelimiters:
-  beginDelimiter: '{#'
-  endDelimiter: '#}'
-comments:
-- beginString: '{#'
-  endString: '#}'
 completions:
 - keyString: if
 - keyString: elseif
@@ -127,21 +216,84 @@ extensions:
 filenames: []
 interpreters: []
 keywords:
-- beginString: '{%-'
-  endString: '-%}'
-- beginString: '{%-'
-  endString: '%}'
-- beginString: '{%'
-  endString: '-%}'
-- beginString: '{%'
-  endString: '%}'
+# Control tag keywords — mirrors HTML element names colour
+- beginString: \bif\b
+  regularExpression: true
+- beginString: \belseif\b
+  regularExpression: true
+- beginString: \belse\b
+  regularExpression: true
+- beginString: \bendif\b
+  regularExpression: true
+- beginString: \bfor\b
+  regularExpression: true
+- beginString: \bendfor\b
+  regularExpression: true
+- beginString: \bblock\b
+  regularExpression: true
+- beginString: \bendblock\b
+  regularExpression: true
+- beginString: \bextends\b
+  regularExpression: true
+- beginString: \binclude\b
+  regularExpression: true
+- beginString: \bembed\b
+  regularExpression: true
+- beginString: \bendembed\b
+  regularExpression: true
+- beginString: \bmacro\b
+  regularExpression: true
+- beginString: \bendmacro\b
+  regularExpression: true
+- beginString: \bfrom\b
+  regularExpression: true
+- beginString: \bimport\b
+  regularExpression: true
+- beginString: \bset\b
+  regularExpression: true
+- beginString: \bendset\b
+  regularExpression: true
+- beginString: \bwith\b
+  regularExpression: true
+- beginString: \bendwith\b
+  regularExpression: true
+- beginString: \bapply\b
+  regularExpression: true
+- beginString: \bendapply\b
+  regularExpression: true
+- beginString: \bautoescape\b
+  regularExpression: true
+- beginString: \bendautoescape\b
+  regularExpression: true
+- beginString: \bverbatim\b
+  regularExpression: true
+- beginString: \bendverbatim\b
+  regularExpression: true
+- beginString: \bflush\b
+  regularExpression: true
+- beginString: \bdeprecated\b
+  regularExpression: true
+- beginString: \bdo\b
+  regularExpression: true
+- beginString: \buse\b
+  regularExpression: true
+- beginString: \band\b
+  regularExpression: true
+- beginString: \bor\b
+  regularExpression: true
+- beginString: \bnot\b
+  regularExpression: true
+- beginString: \bin\b
+  regularExpression: true
+- beginString: \bis\b
+  regularExpression: true
 kind: code
 metadata:
   author: Antigravity
   distributionURL: https://github.com/betarobot/coteditor-twig-syntax
   lastModified: '2026-03-10'
   license: MIT
-  version: 1.2.0
+  version: 1.3.0
 numbers:
 - beginString: '\b\d+(?:\.\d+)?\b'
   regularExpression: true
@@ -160,6 +312,17 @@ strings:
 - beginString: ''''
   endString: ''''
 types:
+# Twig delimiters — mirrors HTML <?...?> processing instruction colour
+- beginString: '{%-'
+- beginString: '-%}'
+- beginString: '{%'
+- beginString: '%}'
+- beginString: '{{-'
+- beginString: '-}}'
+- beginString: '{{'
+- beginString: '}}'
+values:
+# Boolean/null literals — mirrors HTML (no equivalent, but visually distinct)
 - beginString: \btrue\b
   ignoreCase: true
   regularExpression: true
@@ -172,13 +335,7 @@ types:
 - beginString: \bnone\b
   ignoreCase: true
   regularExpression: true
-values: []
 variables:
-- beginString: '{{-'
-  endString: '-}}'
-- beginString: '{{-'
-  endString: '}}'
-- beginString: '{{'
-  endString: '-}}'
-- beginString: '{{'
-  endString: '}}'
+# loop.* special variable
+- beginString: \bloop\b
+  regularExpression: true
