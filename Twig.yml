@@ -135,7 +135,7 @@ keywords:
   endString: '-%}'
 - beginString: '{%'
   endString: '%}'
-kind: general
+kind: code
 metadata:
   author: Antigravity
   distributionURL: https://github.com/betarobot/coteditor-twig-syntax
